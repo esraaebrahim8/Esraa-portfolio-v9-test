@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WHOOPS! — Case Study — Esraa Ebrahim</title>
+<meta name="description" content="WHOOPS!: a facilitated board game that teaches new employees to decide well under incomplete information — authentic assessment, human evidence review, and real-time multiplayer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;450;500;550;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html" aria-label="Esraa Ebrahim — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+        <path d="M6 24c4-2 4-7 9-9s5-7 9-9" fill="none" stroke="var(--teal)" stroke-width="1.7" stroke-linecap="round"/>
+        <circle cx="15" cy="15" r="2.4" class="knot-fill"/>
+      </svg>
+      <span>Esraa Ebrahim<small>Learning Experience Design</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../about.html">About</a><a href="../projects.html" class="active">Case Studies</a><a href="../workshops.html">Workshops</a><a href="../experience.html">Experience</a>
+      <a href="../contact.html" class="nav-cta">Get in touch</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="theme-btn" type="button" aria-label="Toggle theme"></button>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<style>
+:root{--accent:#8E2F43;--accent-d:#6E2234;--accent-tint:#F3E3E7}
+[data-theme="dark"]{--accent:#D4A24C;--accent-d:#E8BE6E;--accent-tint:#2A1E22}
+</style>
+<section class="cs-hero">
+  <div class="wrap">
+    <a class="cs-back ulink reveal" href="../projects.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      Case Studies
+    </a>
+    <div class="pill-row reveal" data-d="1" style="margin:24px 0 20px"><span class="tag">Interactive Board Game</span><span class="tag tag-plain">Onboarding</span><span class="tag tag-plain">Game-based learning</span></div>
+    <h1 class="display reveal" data-d="1">WHOOPS!</h1>
+    <p class="cs-sub serif-i reveal" data-d="2">Decisions that change the next move</p>
+    <p class="lead reveal" data-d="2" style="margin-top:20px;max-width:62ch">A competitive board game that teaches new employees to decide well when the request is incomplete. Three or four teams, ten rounds, one shared die that changes the facts for everyone at once — and the message a team writes is what gets assessed.</p>
+    <div class="hero-cta reveal" data-d="3" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px">
+      <a class="btn btn-primary btn-arrow" href="demo-experience/">Play the interactive demo
+        <span class="btn-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="btn btn-ghost" href="guide-experience/">Read the field guide</a></div>
+  </div>
+</section>
+
+<section class="cs-meta-band">
+  <div class="wrap">
+    <div class="cs-meta-grid reveal"><div><div class="cs-k">My role</div><div class="cs-v">Learning Experience Designer</div></div><div><div class="cs-k">Type</div><div class="cs-v">Game-based learning</div></div><div><div class="cs-k">Audience</div><div class="cs-v">New employees · onboarding</div></div><div><div class="cs-k">Format</div><div class="cs-v">Facilitated · 3–4 teams</div></div><div><div class="cs-k">Structure</div><div class="cs-v">10 rounds · live multiplayer</div></div></div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="cs-body-wrap">
+  <div class="wrap">
+    <div class="cs-layout">
+      <aside class="cs-rail">
+        <div class="cs-rail-inner">
+          <div class="cs-rail-label">On this page</div>
+          <a href="#overview">01 · Overview</a>
+          <a href="#problem">02 · The Problem</a>
+          <a href="#audience">03 · Audience & Objectives</a>
+          <a href="#howitworks">04 · How a Round Works</a>
+          <a href="#assessment">05 · Assessment & Fairness</a>
+          <a href="#decisions">06 · Design Decisions</a>
+          <a href="#launch">07 · Play & Explore</a>
+          <a href="#outcome">08 · Outcome & Build</a>
+          <a href="#reflection">09 · Reflection</a>
+        </div>
+      </aside>
+      <div class="cs-content">
+                <section id="overview" class="cs-block reveal">
+          <span class="cs-block-num">01</span>
+          <h2 class="h2">Overview</h2>
+          <p>WHOOPS! is a competitive board game that teaches new employees to decide well when a request is incomplete. Three or four teams, ten rounds, one shared die that changes the facts for everyone at once.</p>
+          <p>Each round, a team picks a lane that decides what help it has, then writes the actual message it would send. A facilitator judges those words against two published criteria — no AI grading, no individual scoring.</p>
+        </section>
+
+        <section id="problem" class="cs-block reveal">
+          <span class="cs-block-num">02</span>
+          <h2 class="h2">The Problem</h2>
+          <p>New employees rarely fail because they lack knowledge. They fail on judgment under incomplete information: acting on an assumed deadline, going quiet instead of asking the one question that would unblock them, or handing over work a colleague can't continue without guessing.</p>
+          <p class="cs-callout">These cost rework and credibility, and a quiz can't detect them. You only see them in what someone writes and decides.</p>
+        </section>
+
+        <section id="audience" class="cs-block reveal">
+          <span class="cs-block-num">03</span>
+          <h2 class="h2">Audience &amp; Objectives</h2>
+          <p>Best fit: new employees in onboarding or induction, in their first weeks. Also works for graduate programmes and teams where unclear requests and weak handoffs keep causing rework. Three or four teams of 2–4, one facilitator, one device per team.</p>
+          <p>The objectives sit in the upper levels of Bloom's, because every round ends in something produced and a judgment call:</p>
+          <ul class="obj-list">
+            <li><span>Understand</span> an unclear request and state what's actually being asked.</li>
+            <li><span>Apply</span> the right channel — check, or hand off — for the situation.</li>
+            <li><span>Analyse</span> confirmed facts from assumptions after conditions change.</li>
+            <li><span>Evaluate</span> whether a plan still fits the time that remains, and decide what to release.</li>
+            <li><span>Create</span> the actual message, agreement, or handoff note — every round.</li>
+          </ul>
+        </section>
+
+        <figure class="cs-shot reveal">
+          <img src="../assets/projects/whoops-board.jpg" alt="The WHOOPS! shared board — three lanes (CHECK, CONNECT, PROCEED) across ten columns, in a dark burgundy and gold design." loading="lazy">
+          <figcaption>The shared board: three lanes, ten columns. Your position decides what help you have.</figcaption>
+        </figure>
+
+        <section id="howitworks" class="cs-block reveal">
+          <span class="cs-block-num">04</span>
+          <h2 class="h2">How a Round Works</h2>
+          <div class="arch-flow">
+            <div class="af-stage reveal"><div class="af-day">Choose</div><h4>Pick a route</h4><p class="muted">CHECK, CONNECT, or PROCEED — your lane decides what help you have. Routes stay hidden from rivals.</p></div>
+            <div class="af-arrow">→</div>
+            <div class="af-stage reveal" data-d="1"><div class="af-day">Shift</div><h4>The die changes the facts</h4><p class="muted">One roll, one event, every team. It never awards points — it changes what a good plan must handle.</p></div>
+            <div class="af-arrow">→</div>
+            <div class="af-stage reveal" data-d="2"><div class="af-day">Decide</div><h4>Think alone, then agree</h4><p class="muted">A private first judgment, then the team writes the real message and picks the next step.</p></div>
+          </div>
+          <p style="margin-top:16px">All results publish at the same moment. Position, resources, and unfinished work carry into the next round — and in the final three, into a connected capstone.</p>
+        </section>
+
+        <section id="assessment" class="cs-block reveal">
+          <span class="cs-block-num">05</span>
+          <h2 class="h2">Assessment &amp; Fairness</h2>
+          <p>This is what separates it from a quiz. Four points a round, plus one:</p>
+          <div class="dec-grid">
+            <div class="dec-card"><h4>Rules + human judgment</h4><p>Two points from a deterministic engine, two from a facilitator reading the team's own words against published criteria.</p></div>
+            <div class="dec-card"><h4>HOLD instead of guessing</h4><p>An unsure facilitator pauses publication rather than inventing a score. HOLD is never turned into a zero.</p></div>
+            <div class="dec-card"><h4>The bonus needs evidence</h4><p>Picking the right follow-through in a dropdown earns nothing unless it also appears in the team's own message.</p></div>
+            <div class="dec-card"><h4>A score describes a team, never a person</h4><p>No individual scoring. Private notes stay private. Style is never marked, and participants are told so before round one.</p></div>
+          </div>
+        </section>
+
+        <figure class="cs-shot reveal">
+          <img src="../assets/projects/whoops-play.jpg" alt="A WHOOPS! round in play, showing a team's lane, the shared die event, and the message they are composing." loading="lazy">
+          <figcaption>Teams write the real message. The words are the evidence — consequence, not a shown "right answer."</figcaption>
+        </figure>
+
+        <section id="decisions" class="cs-block reveal">
+          <span class="cs-block-num">06</span>
+          <h2 class="h2">Design Decisions</h2>
+          <p>Every mechanic does a teaching job:</p>
+          <div class="dec-grid">
+            <div class="dec-card"><h4>Authentic assessment</h4><p>The output is the artefact the job requires, so practice and evidence are the same act.</p></div>
+            <div class="dec-card"><h4>Varied conditions</h4><p>The same objective returns under different facts — which is what makes it transfer rather than become a script.</p></div>
+            <div class="dec-card"><h4>Think alone, then together</h4><p>A private first judgment protects independent thinking before the loudest voice sets the answer.</p></div>
+            <div class="dec-card"><h4>Psychological safety by design</h4><p>No individual scores, no speed bonuses, no streaks — nothing a learner can't control is ever scored.</p></div>
+          </div>
+        </section>
+
+        <section id="launch" class="cs-block reveal">
+          <span class="cs-block-num">07</span>
+          <h2 class="h2">Play &amp; Explore</h2>
+          <p>The interactive demo runs one guided round in about five minutes. The field guide is a 26-station map of the design, facilitation, and engineering. Both open right here inside the portfolio.</p>
+          <div class="launch-grid">
+            <div class="launch-card reveal">
+              <div class="launch-qr"><img src="../assets/qr/whoops-demo.png" alt="QR code to play the WHOOPS demo"></div>
+              <div class="launch-info">
+                <h4>Interactive Demo</h4>
+                <p>One guided round against three simulated teams.</p>
+                <a class="btn btn-primary btn-arrow" href="demo-experience/" style="padding:8px 16px;font-size:.84rem">Play here
+                  <span class="btn-arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+              </div>
+            </div>
+            <div class="launch-card reveal" data-d="1">
+              <div class="launch-qr"><img src="../assets/qr/whoops-guide.png" alt="QR code to read the WHOOPS field guide"></div>
+              <div class="launch-info">
+                <h4>Field Guide</h4>
+                <p>A 26-station design, facilitation &amp; build document.</p>
+                <a class="btn btn-primary btn-arrow" href="guide-experience/" style="padding:8px 16px;font-size:.84rem">Read here
+                  <span class="btn-arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="outcome" class="cs-block reveal">
+          <span class="cs-block-num">08</span>
+          <h2 class="h2">Outcome &amp; Build</h2>
+          <p>A verified functional prototype, ready for a pilot — built as a static web app (React, TypeScript, Vite) where the facilitator's browser is the single source of truth and team devices connect peer-to-peer. No database, no accounts, no central store of anyone's work. 70 automated tests, including full ten-round games replayed on every run.</p>
+          <div class="hl-grid">
+            <span class="hl">Game-Based Learning</span>
+            <span class="hl">Authentic Assessment</span>
+            <span class="hl">Scenario Design</span>
+            <span class="hl">Bloom's Taxonomy</span>
+            <span class="hl">Facilitator Enablement</span>
+            <span class="hl">Behavioural Anchors</span>
+            <span class="hl">Real-time Multiplayer</span>
+            <span class="hl">Privacy by Design</span>
+          </div>
+          <p class="cs-reflection"><strong>What's proven, and what isn't.</strong> Verified: the rules, the privacy model, the facilitation flow, the full game loop, and recovery from failure. Not yet verified: learning gain and transfer with real learners. I published that line rather than hiding it — a product that names its limits reads as confidence, not doubt.</p>
+        </section>
+
+        <section id="reflection" class="cs-block reveal cs-final">
+          <span class="cs-block-num">09</span>
+          <h2 class="h2">Reflection</h2>
+          <p>The hardest and best decision was refusing to score individuals or reward speed. It would have been easy to add streaks and badges. But the skill being taught is judgment under pressure, and the moment you score the wrong things, you teach the wrong things. Designing what <em>not</em> to measure turned out to matter as much as designing what to.</p>
+          <div class="hero-cta" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
+            <a class="btn btn-primary btn-arrow" href="demo-experience/">Play the demo
+              <span class="btn-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+            <a class="btn btn-ghost" href="../projects.html">All case studies</a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band section-pad">
+  <div class="wrap center">
+    <span class="eyebrow no-rule reveal" style="justify-content:center">Interested in working together?</span>
+    <h2 class="display reveal" data-d="1" style="margin-top:20px;font-size:clamp(2rem,4.5vw,3rem)">Let's talk about your<br>learning challenge.</h2>
+    <div class="hero-cta reveal" data-d="2" style="justify-content:center;margin-top:28px">
+      <a class="btn btn-primary btn-arrow" href="../contact.html">Get in touch
+        <span class="btn-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="btn btn-ghost" href="../projects.html">All case studies</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<style>
+.cs-hero{padding:clamp(36px,6vw,72px) 0 clamp(24px,3vw,40px)}
+.cs-back{font-size:.9rem;color:var(--ink-soft);display:inline-flex;align-items:center;gap:7px}
+.cs-back:hover{color:var(--accent)}
+.cs-hero .display{font-size:clamp(2.6rem,7.5vw,5.4rem);line-height:.99;margin-top:4px}
+.cs-sub{font-size:clamp(1.3rem,3vw,2.1rem);color:var(--accent);margin-top:6px;display:block}
+.cs-meta-band{border-block:1px solid var(--line);background:var(--paper-2)}
+.cs-meta-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;padding:22px 0}
+@media(max-width:760px){.cs-meta-grid{grid-template-columns:repeat(2,1fr)}}
+.cs-k{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;margin-bottom:5px}
+.cs-v{font-size:.96rem;color:var(--ink);font-weight:500}
+.cs-body-wrap .wrap{padding-top:clamp(40px,6vw,72px);padding-bottom:clamp(40px,6vw,72px)}
+.cs-layout{display:grid;grid-template-columns:200px 1fr;gap:clamp(32px,5vw,72px);align-items:start}
+@media(max-width:980px){.cs-layout{grid-template-columns:1fr}.cs-rail{display:none}}
+.cs-rail-inner{position:sticky;top:100px;display:grid;gap:3px}
+.cs-rail-label{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;margin-bottom:10px}
+.cs-rail a{text-decoration:none;color:var(--ink-soft);font-size:.84rem;padding:5px 0;border-left:2px solid var(--line);padding-left:14px;transition:color .2s,border-color .2s}
+.cs-rail a:hover{color:var(--accent);border-color:var(--accent)}
+.cs-content{min-width:0}
+.cs-block{padding-bottom:clamp(36px,5vw,64px);margin-bottom:clamp(36px,5vw,64px);border-bottom:1px solid var(--line);scroll-margin-top:90px}
+.cs-final{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.cs-block-num{font-family:var(--f-display);font-size:.9rem;color:var(--accent);font-weight:500;display:block;margin-bottom:10px}
+.cs-block .h2{margin-bottom:18px}
+.cs-content p{font-size:1.06rem;line-height:1.72;color:var(--ink);max-width:66ch}
+.cs-content p+p{margin-top:16px}
+.cs-content strong{font-weight:600}
+.cs-callout{border-left:3px solid var(--accent);padding:4px 0 4px 22px;font-family:var(--f-display);font-style:italic;font-size:1.18rem!important;line-height:1.5;color:var(--ink);margin:22px 0!important;max-width:60ch}
+.needs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+@media(max-width:680px){.needs-grid{grid-template-columns:1fr}}
+.needs-card{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:16px}
+.nc-k{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:7px}
+.nc-v{font-size:.92rem;color:var(--ink);line-height:1.5}
+.obj-list{list-style:none;margin:16px 0;padding:0;display:grid;gap:0}
+.obj-list li{padding:13px 0;border-bottom:1px solid var(--line);font-size:1.02rem;color:var(--ink);line-height:1.6;max-width:70ch}
+.obj-list li:first-child{border-top:1px solid var(--line)}
+.obj-list li span{display:inline-block;min-width:96px;color:var(--accent);font-weight:600;font-family:var(--f-display);font-style:italic;margin-right:4px}
+.dec-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:8px}
+@media(max-width:680px){.dec-grid{grid-template-columns:1fr}}
+.dec-card{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.dec-card h4{font-family:var(--f-display);font-weight:500;font-size:1.05rem;color:var(--ink);margin-bottom:8px}
+.dec-card p{font-size:.94rem!important;line-height:1.6;color:var(--ink-soft);margin:0!important;max-width:none!important}
+.arch-flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;align-items:stretch;margin:24px 0}
+@media(max-width:820px){.arch-flow{grid-template-columns:1fr}.af-arrow{display:none}}
+.af-stage{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:20px}
+.af-day{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:8px}
+.af-stage h4{font-family:var(--f-display);font-weight:500;font-size:1.08rem;margin-bottom:7px}
+.af-stage p{font-size:.92rem!important;margin:0!important;color:var(--ink-soft)}
+.af-arrow{display:grid;place-items:center;color:var(--accent);font-size:1.4rem}
+.eval-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:860px){.eval-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.eval-grid{grid-template-columns:1fr}}
+.eval-card{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:18px}
+.ec-n{font-family:var(--f-display);font-size:1.05rem;color:var(--accent);font-weight:500;margin-bottom:9px}
+.eval-card p{font-size:.9rem!important;margin:0!important;color:var(--ink-soft)}
+.hl-grid{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.hl{display:inline-block;background:var(--accent-tint);color:var(--accent-d);border:1px solid color-mix(in srgb,var(--accent) 22%,transparent);border-radius:100px;padding:8px 16px;font-size:.9rem;font-weight:500}
+[data-theme="dark"] .hl{color:var(--accent)}
+.cs-shot{margin:0 0 clamp(36px,5vw,64px);padding-bottom:clamp(36px,5vw,64px);border-bottom:1px solid var(--line)}
+.cs-shot img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-lg)}
+.cs-shot figcaption{margin-top:14px;font-size:.9rem;line-height:1.55;color:var(--ink-faint);max-width:60ch}
+.cs-reflection{margin-top:24px!important;padding:18px 22px;background:var(--paper-2);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;font-size:1rem!important;color:var(--ink-soft)!important;max-width:none!important}
+.cs-reflection strong{color:var(--ink)}
+.cta-band{background:var(--paper-2);border-top:1px solid var(--line)}
+/* downloadable materials grid */
+.mat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:10px}
+@media(max-width:680px){.mat-grid{grid-template-columns:1fr}}
+.mat-card{display:flex;flex-direction:column;gap:12px;background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:18px 20px;transition:box-shadow .3s,border-color .3s,transform .3s}
+.mat-card:hover{box-shadow:var(--shadow-lg);border-color:color-mix(in srgb,var(--accent) 32%,var(--line));transform:translateY(-2px)}
+.mat-top{display:flex;align-items:flex-start;gap:12px}
+.mat-ico{flex:0 0 auto;width:38px;height:38px;border-radius:10px;background:var(--accent-tint);color:var(--accent-d);display:grid;place-items:center}
+[data-theme="dark"] .mat-ico{color:var(--accent)}
+.mat-meta{min-width:0}
+.mat-name{font-weight:600;font-size:1rem;color:var(--ink);line-height:1.3}
+.mat-kind{font-size:.76rem;color:var(--ink-faint);letter-spacing:.04em;margin-top:3px}
+.mat-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.mat-btn{display:inline-flex;align-items:center;gap:6px;font-size:.84rem;font-weight:550;padding:7px 13px;border-radius:999px;text-decoration:none;border:1px solid var(--line);color:var(--ink);transition:background .2s,color .2s,border-color .2s}
+.mat-btn:hover{border-color:var(--accent);color:var(--accent)}
+.mat-btn-solid{background:var(--accent);color:#fff;border-color:var(--accent)}
+.mat-btn-solid:hover{background:var(--accent-d);color:#fff;border-color:var(--accent-d)}
+[data-theme="dark"] .mat-btn-solid{color:#0d1116}
+[data-theme="dark"] .mat-btn-solid:hover{color:#0d1116}
+/* QR launch row */
+.launch-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:10px}
+@media(max-width:680px){.launch-grid{grid-template-columns:1fr}}
+.launch-card{display:flex;gap:16px;align-items:center;background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:18px}
+.launch-qr{flex:0 0 auto;width:92px;height:92px;border-radius:10px;border:1px solid var(--line);background:#fff;padding:6px}
+.launch-qr img{width:100%;height:100%;display:block}
+.launch-info{min-width:0}
+.launch-info h4{font-family:var(--f-display);font-weight:500;font-size:1.1rem;margin-bottom:5px}
+.launch-info p{font-size:.88rem!important;color:var(--ink-soft);margin:0 0 10px!important}
+.launch-info .ldots{font-size:.78rem;color:var(--ink-faint);margin-bottom:10px}
+</style>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="big">Designing learning experiences that create engagement, reflection &amp; behaviour change.</p>
+        <a class="btn btn-ghost" style="margin-top:24px" href="../contact.html">Get in touch</a>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="../about.html">About</a>
+        <a href="../projects.html">Case Studies</a>
+        <a href="../workshops.html">Workshops</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="https://www.linkedin.com/in/esraa-ebrahim-797725212" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.behance.net/cd5e05d9" target="_blank" rel="noopener">Behance</a>
+        <a href="mailto:esraa.ibrahim.mostafa@gmail.com">Email</a>
+        <a href="../assets/Esraa-Ebrahim-CV.pdf" download>Download CV</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© 2026 Esraa Ebrahim · Learning Experience Designer</span>
+      <span style="display:flex;gap:18px">
+        <a href="https://www.linkedin.com/in/esraa-ebrahim-797725212" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.behance.net/cd5e05d9" target="_blank" rel="noopener">Behance</a>
+        <a href="mailto:esraa.ibrahim.mostafa@gmail.com">Email</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<script src="../shared.js"></script>
+</body>
+</html>

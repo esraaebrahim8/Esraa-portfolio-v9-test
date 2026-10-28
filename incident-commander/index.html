@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Incident Commander — Case Study — Esraa Ebrahim</title>
+<meta name="description" content="Incident Commander: a decision-making learning game that builds judgement under pressure for incident response — branching consequences, live trade-offs, and a structured debrief.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;450;500;550;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html" aria-label="Esraa Ebrahim — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+        <path d="M6 24c4-2 4-7 9-9s5-7 9-9" fill="none" stroke="var(--teal)" stroke-width="1.7" stroke-linecap="round"/>
+        <circle cx="15" cy="15" r="2.4" class="knot-fill"/>
+      </svg>
+      <span>Esraa Ebrahim<small>Learning Experience Design</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../about.html">About</a><a href="../projects.html" class="active">Case Studies</a><a href="../workshops.html">Workshops</a><a href="../experience.html">Experience</a>
+      <a href="../contact.html" class="nav-cta">Get in touch</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="theme-btn" type="button" aria-label="Toggle theme"></button>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<!-- HERO -->
+<section class="cs-hero">
+  <div class="wrap">
+    <a class="cs-back ulink reveal" href="../projects.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      Case Studies
+    </a>
+    <div class="pill-row reveal" data-d="1" style="margin:24px 0 20px">
+      <span class="tag">Interactive Learning Game</span>
+      <span class="tag tag-plain">Incident response</span>
+      <span class="tag tag-plain">Corporate onboarding</span>
+    </div>
+    <h1 class="display reveal" data-d="1">Incident Commander</h1>
+    <p class="cs-sub serif-i reveal" data-d="2">Judgement under pressure, rehearsed safely</p>
+    <p class="lead reveal" data-d="2" style="margin-top:20px;max-width:60ch">
+      A single-player decision game that puts a new operations lead in charge of a live payment
+      outage — where every call reshapes the next one, and there are no correct answers shown.
+    </p>
+    <div class="hero-cta reveal" data-d="3" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px">
+      <a class="btn btn-primary btn-arrow" href="experience/">
+        Launch the experience
+        <span class="btn-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="btn btn-ghost" href="#process">See the design thinking</a>
+    </div>
+  </div>
+</section>
+
+<!-- META BAND -->
+<section class="cs-meta-band">
+  <div class="wrap">
+    <div class="cs-meta-grid reveal">
+      <div><div class="cs-k">My role</div><div class="cs-v">Learning Experience Designer</div></div>
+      <div><div class="cs-k">Type</div><div class="cs-v">Scenario-based game</div></div>
+      <div><div class="cs-k">Audience</div><div class="cs-v">New incident responders</div></div>
+      <div><div class="cs-k">Format</div><div class="cs-v">Self-paced · browser</div></div>
+      <div><div class="cs-k">Structure</div><div class="cs-v">7 stages · 8 endings</div></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CASE STUDY BODY -->
+<section class="section-pad cs-body">
+  <div class="wrap">
+    <div class="cs-layout">
+
+      <aside class="cs-rail">
+        <div class="cs-rail-inner">
+          <div class="cs-rail-label">On this page</div>
+          <a href="#context">01 · Context</a>
+          <a href="#need">02 · Learning Need</a>
+          <a href="#role">03 · My Role</a>
+          <a href="#process">04 · Process</a>
+          <a href="#decisions">05 · Key Decisions</a>
+          <a href="#solution">06 · The Solution</a>
+          <a href="#outcome">07 · Outcome &amp; Tools</a>
+          <a href="#launch">08 · Try It</a>
+        </div>
+      </aside>
+
+      <div class="cs-content">
+
+        <section id="context" class="cs-block reveal">
+          <span class="cs-block-num">01</span>
+          <h2 class="h2">Context</h2>
+          <p>When a payments platform goes down, it loses money and customer trust by the minute. The people who run those incidents are often doing it for the first time — and no runbook prepares you for the pressure of a live outage.</p>
+          <p>New responders don't fail because they lack knowledge. They freeze: going quiet when they should speak, or flooding executives when they should be shielding the team fixing the problem. That's a judgement gap, and a quiz can't close it.</p>
+          <p class="cs-callout">So I built a place to rehearse the judgement — a decision game where you run a real outage and live with the consequences of every call.</p>
+        </section>
+
+        <section id="need" class="cs-block reveal">
+          <span class="cs-block-num">02</span>
+          <h2 class="h2">Learning Need &amp; Objectives</h2>
+          <div class="needs-grid">
+            <div class="needs-card"><div class="nc-k">Learning Need</div><div class="nc-v">New incident leads know the runbook but hesitate on the calls that matter — when to escalate, when to wait, who to tell first.</div></div>
+            <div class="needs-card"><div class="nc-k">Target Audience</div><div class="nc-v">New and developing operations staff moving into incident-lead responsibilities.</div></div>
+          </div>
+          <ul class="obj-list" style="margin-top:18px">
+            <li><span>Prioritise</span> the next right action when several things are on fire at once.</li>
+            <li><span>Communicate</span> at the right moment, to the right stakeholder.</li>
+            <li><span>Protect</span> the team fixing the problem from unnecessary interruption.</li>
+          </ul>
+        </section>
+
+        <section id="role" class="cs-block reveal">
+          <span class="cs-block-num">03</span>
+          <h2 class="h2">My Role</h2>
+          <p>I designed the experience end to end — the scenario and branching logic, the decision points, the feedback model, and the closing debrief.</p>
+          <div class="needs-grid">
+            <div class="needs-card"><div class="nc-k">Audience</div><div class="nc-v">New operations staff stepping into incident-lead duties</div></div>
+            <div class="needs-card"><div class="nc-k">Format</div><div class="nc-v">Self-paced decision game · 7 stages · 8 endings</div></div>
+            <div class="needs-card"><div class="nc-k">Focus</div><div class="nc-v">Judgement under pressure, not recall</div></div>
+          </div>
+        </section>
+
+        <section id="process" class="cs-block reveal">
+          <span class="cs-block-num">04</span>
+          <h2 class="h2">Process</h2>
+          <p>I started from the behaviours a good incident lead actually shows under pressure, then worked backwards into a scenario that forces each one.</p>
+          <div class="arch-flow">
+            <div class="af-stage reveal">
+              <div class="af-day">Frame</div>
+              <h4>Define the behaviours</h4>
+              <p class="muted">Prioritising, communicating at the right moment, and protecting the team — written as things you can watch someone do.</p>
+            </div>
+            <div class="af-arrow">→</div>
+            <div class="af-stage reveal" data-d="1">
+              <div class="af-day">Build</div>
+              <h4>Branch the scenario</h4>
+              <p class="muted">One outage, seven stages, eight endings — every path shaped by the learner's calls, not a fixed script.</p>
+            </div>
+            <div class="af-arrow">→</div>
+            <div class="af-stage reveal" data-d="2">
+              <div class="af-day">Close</div>
+              <h4>Debrief the decisions</h4>
+              <p class="muted">An executive report that turns the run into reflection, then invites a replay.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="decisions" class="cs-block reveal">
+          <span class="cs-block-num">05</span>
+          <h2 class="h2">Key Decisions</h2>
+          <p>The instructional choices that shaped the experience:</p>
+          <div class="dec-grid">
+            <div class="dec-card">
+              <h4>A game, not a course</h4>
+              <p>Judgement transfers through practice and consequence. Playing the role builds instinct that reading never will.</p>
+            </div>
+            <div class="dec-card">
+              <h4>No correct answer shown</h4>
+              <p>Real incidents don't reveal the right move. Living with each call is what makes the judgement stick.</p>
+            </div>
+            <div class="dec-card">
+              <h4>Competing live metrics</h4>
+              <p>Six signals pull in different directions, so learners feel the trade-offs instead of being told about them.</p>
+            </div>
+            <div class="dec-card">
+              <h4>A clock, and a pause</h4>
+              <p>The timer makes the pressure real; the pause keeps it humane. Pressure drives transfer; safety keeps people learning.</p>
+            </div>
+            <div class="dec-card">
+              <h4>Feedback you can trust</h4>
+              <p>Every point explains itself and every badge shows how it's earned — because feedback learners believe is feedback that changes behaviour.</p>
+            </div>
+            <div class="dec-card">
+              <h4>Accessible by default</h4>
+              <p>Extended-time and full keyboard control mean the challenge comes from the scenario, never the interface.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="solution" class="cs-block reveal">
+          <span class="cs-block-num">06</span>
+          <h2 class="h2">The Solution</h2>
+          <p>A branching decision game built around consequence, not correction. Six live signals — customer trust, satisfaction, team workload, the learner's own stress, executive confidence, and reputation — respond to every choice, so the invisible trade-offs of incident response become visible in the moment.</p>
+          <p>It closes with a structured debrief framed as an executive report: a mission grade across response speed, communication, stakeholder satisfaction, and business impact, plus named strengths and areas to improve. Field notes throughout carry the transferable principles home — acknowledge before you have answers, silence reads as absence, protect the people doing the fixing.</p>
+        </section>
+
+        <section id="outcome" class="cs-block reveal">
+          <span class="cs-block-num">07</span>
+          <h2 class="h2">Outcome &amp; Tools</h2>
+          <p>The result is a complete, self-contained onboarding experience that lets new responders practise high-stakes judgement before they ever face a real incident — and gives their managers a consistent way to build that judgement across a team.</p>
+          <div class="hl-grid">
+            <span class="hl">Scenario &amp; branching design</span>
+            <span class="hl">Decision-making under pressure</span>
+            <span class="hl">Consequence-based feedback</span>
+            <span class="hl">Reflection &amp; debrief</span>
+            <span class="hl">Accessibility</span>
+          </div>
+          <p class="cs-reflection"><strong>What it reinforced.</strong> The strongest designs make consequences felt, not explained. Removing the "correct answer" was uncomfortable on purpose — and it's exactly what turns a scenario into judgement someone can carry into a real incident.</p>
+        </section>
+
+        <section id="launch" class="cs-block reveal cs-final">
+          <span class="cs-block-num">08</span>
+          <h2 class="h2">Try it yourself</h2>
+          <p>It runs in the browser and takes a few minutes. Every path is different.</p>
+          <div class="hero-cta" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:20px">
+            <a class="btn btn-primary btn-arrow" href="experience/">
+              Launch the experience
+              <span class="btn-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a>
+            <a class="btn btn-ghost" href="../projects.html">All case studies</a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band section-pad">
+  <div class="wrap center">
+    <span class="eyebrow no-rule reveal" style="justify-content:center">Interested in working together?</span>
+    <h2 class="display reveal" data-d="1" style="margin-top:20px;font-size:clamp(2rem,4.5vw,3rem)">Let's talk about your<br>learning challenge.</h2>
+    <div class="hero-cta reveal" data-d="2" style="justify-content:center;margin-top:28px">
+      <a class="btn btn-primary btn-arrow" href="../contact.html">Get in touch
+        <span class="btn-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="btn btn-ghost" href="../projects.html">All case studies</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<style>
+
+.cs-hero{padding:clamp(36px,6vw,72px) 0 clamp(24px,3vw,40px)}
+.cs-back{font-size:.9rem;color:var(--ink-soft);margin-bottom:4px;display:inline-flex}
+.cs-hero .display{font-size:clamp(2.8rem,8vw,6rem);line-height:.98;margin-top:4px}
+.cs-sub{font-size:clamp(1.3rem,3vw,2.1rem);color:var(--teal);margin-top:4px;display:block}
+
+.cs-meta-band{border-block:1px solid var(--line);background:var(--paper-2)}
+.cs-meta-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;padding:22px 0}
+@media(max-width:760px){.cs-meta-grid{grid-template-columns:repeat(2,1fr)}}
+.cs-k{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;margin-bottom:5px}
+.cs-v{font-size:.96rem;color:var(--ink);font-weight:500}
+
+.cs-layout{display:grid;grid-template-columns:200px 1fr;gap:clamp(32px,5vw,72px);align-items:start}
+@media(max-width:980px){.cs-layout{grid-template-columns:1fr}.cs-rail{display:none}}
+.cs-rail-inner{position:sticky;top:100px;display:grid;gap:3px}
+.cs-rail-label{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;margin-bottom:10px}
+.cs-rail a{text-decoration:none;color:var(--ink-soft);font-size:.84rem;padding:5px 0;border-left:2px solid var(--line);padding-left:14px;transition:color .2s,border-color .2s}
+.cs-rail a:hover{color:var(--teal);border-color:var(--teal)}
+
+.cs-content{max-width:none}
+.cs-block{padding-bottom:clamp(36px,5vw,64px);margin-bottom:clamp(36px,5vw,64px);border-bottom:1px solid var(--line);scroll-margin-top:90px}
+.cs-final{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.cs-block-num{font-family:var(--f-display);font-size:.9rem;color:var(--teal);font-weight:500;display:block;margin-bottom:10px}
+.cs-block .h2{margin-bottom:18px}
+.cs-content p{font-size:1.06rem;line-height:1.72;color:var(--ink);max-width:66ch}
+.cs-content p+p{margin-top:16px}
+.cs-content em{font-style:italic}
+.cs-content strong{font-weight:600}
+.cs-callout{border-left:3px solid var(--teal);padding:4px 0 4px 22px;font-family:var(--f-display);font-style:italic;
+  font-size:1.18rem!important;line-height:1.5;color:var(--ink);margin:22px 0!important}
+
+.needs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+@media(max-width:680px){.needs-grid{grid-template-columns:1fr}}
+.needs-card{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:16px}
+.nc-k{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:7px}
+.nc-v{font-size:.92rem;color:var(--ink);line-height:1.5}
+
+.obj-list{list-style:none;margin:16px 0;padding:0;display:grid;gap:0}
+.obj-list li{padding:14px 0;border-bottom:1px solid var(--line);font-size:1.04rem;color:var(--ink);line-height:1.6;max-width:66ch}
+.obj-list li:first-child{border-top:1px solid var(--line)}
+.obj-list li span{display:inline-block;min-width:96px;color:var(--teal);font-weight:600;font-family:var(--f-display);font-style:italic;margin-right:4px}
+
+.dec-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:8px}
+@media(max-width:680px){.dec-grid{grid-template-columns:1fr}}
+.dec-card{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.dec-card h4{font-family:var(--f-display);font-weight:500;font-size:1.05rem;color:var(--ink);margin-bottom:8px}
+.dec-card p{font-size:.94rem!important;line-height:1.6;color:var(--ink-soft);margin:0!important;max-width:none!important}
+
+.arch-flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;align-items:stretch;margin:24px 0}
+@media(max-width:820px){.arch-flow{grid-template-columns:1fr}.af-arrow{display:none}}
+.af-stage{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:20px}
+.af-day{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:8px}
+.af-stage h4{font-family:var(--f-display);font-weight:500;font-size:1.08rem;margin-bottom:7px}
+.af-stage p{font-size:.92rem!important;margin:0!important}
+.af-arrow{display:grid;place-items:center;color:var(--teal);font-size:1.4rem}
+
+.eval-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:680px){.eval-grid{grid-template-columns:1fr}}
+.eval-card{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:18px}
+.ec-n{font-family:var(--f-display);font-size:1.15rem;color:var(--teal);font-weight:500;margin-bottom:9px}
+.eval-card p{font-size:.92rem!important;margin:0!important;color:var(--ink-soft)}
+
+.hl-grid{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.hl{display:inline-block;background:var(--teal-tint);color:var(--teal-d);border:1px solid color-mix(in srgb,var(--teal) 22%,transparent);
+  border-radius:100px;padding:8px 16px;font-size:.9rem;font-weight:500}
+[data-theme="dark"] .hl{color:var(--teal)}
+
+.cs-shot{margin:0 0 clamp(36px,5vw,64px);padding-bottom:clamp(36px,5vw,64px);border-bottom:1px solid var(--line)}
+.cs-shot img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-lg)}
+.cs-shot figcaption{margin-top:14px;font-size:.9rem;line-height:1.55;color:var(--ink-faint);max-width:60ch}
+.cs-reflection{margin-top:24px!important;padding:18px 22px;background:var(--paper-2);border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:12px;font-size:1rem!important;color:var(--ink-soft)!important}
+.cs-reflection strong{color:var(--ink)}
+.cta-band{background:var(--paper-2);border-top:1px solid var(--line)}
+
+</style>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="big">Designing learning experiences that create engagement, reflection &amp; behaviour change.</p>
+        <a class="btn btn-ghost" style="margin-top:24px" href="../contact.html">Get in touch</a>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="../about.html">About</a>
+        <a href="../projects.html">Case Studies</a>
+        <a href="../workshops.html">Workshops</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="https://www.linkedin.com/in/esraa-ebrahim-797725212" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.behance.net/cd5e05d9" target="_blank" rel="noopener">Behance</a>
+        <a href="mailto:esraa.ibrahim.mostafa@gmail.com">Email</a>
+        <a href="../assets/Esraa-Ebrahim-CV.pdf" download>Download CV</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© 2026 Esraa Ebrahim · Learning Experience Designer</span>
+      <span style="display:flex;gap:18px">
+        <a href="https://www.linkedin.com/in/esraa-ebrahim-797725212" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.behance.net/cd5e05d9" target="_blank" rel="noopener">Behance</a>
+        <a href="mailto:esraa.ibrahim.mostafa@gmail.com">Email</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<script src="../shared.js"></script>
+</body>
+</html>
